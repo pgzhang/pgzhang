@@ -43,10 +43,12 @@
 <meta property="og:site_name" content="Yiqing">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;Win10 安装完OpenVINO在测试demo 程序时报如下错误： 123456-- Configuring incomplete, errors occurred!CMake Error: Cannot open file for write: D:/Program Files/openvino_install/openvino_2019.1.148/deploymen">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-22T05:48:47.520Z">
+<meta property="og:image" content="http://yoursite.com/images/cmake_install.png">
+<meta property="og:updated_time" content="2019-05-22T06:01:16.319Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Win10 安装OpenVINO出现CMake Error Cannot open file for write System Error Permission denied">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;Win10 安装完OpenVINO在测试demo 程序时报如下错误： 123456-- Configuring incomplete, errors occurred!CMake Error: Cannot open file for write: D:/Program Files/openvino_install/openvino_2019.1.148/deploymen">
+<meta name="twitter:image" content="http://yoursite.com/images/cmake_install.png">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1">
@@ -132,7 +134,7 @@
             <div class="post-content">
             <p>&emsp;&emsp;Win10 安装完OpenVINO在测试demo 程序时报如下错误：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-- Configuring incomplete, errors occurred!</span><br><span class="line">CMake Error: Cannot open file for write: D:/Program Files/openvino_install/openvino_2019.1.148/deployment_tools/inference_engine/samples/CMakeCache.txt.tmp</span><br><span class="line">CMake Error: : System Error: Permission denied</span><br><span class="line">CMake Error: Unable to open cache file for save. D:/Program Files/openvino_install/openvino_2019.1.148/deployment_tools/inference_engine/samples/CMakeCache.txt</span><br><span class="line">CMake Error: : System Error: Permission denied</span><br><span class="line">Error</span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;原因是CMake权限不够，但在安装时已经选择了’Add CMake to the system PATH for all users’<br><a href="./cmake_install.png"></a><br>&emsp;&emsp;自己安装OpenVINO时安装路径选择在了D盘，最后自己的解决方法是卸载OpenVINO,重新安装，选择默认安装路径，最后成功运行demo程序</p>
+<p>&emsp;&emsp;原因是CMake权限不够，但在安装时已经选择了’Add CMake to the system PATH for all users’<br><img src="/images/cmake_install.png" alt=""><br>&emsp;&emsp;自己安装OpenVINO时安装路径选择在了D盘，最后自己的解决方法是卸载OpenVINO,重新安装，选择默认安装路径，最后成功运行demo程序</p>
 
             </div>
           
