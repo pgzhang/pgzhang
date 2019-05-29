@@ -12,12 +12,12 @@
 
 
 
-  <meta name="description" content="查看NVIDIA GPU 使用情况的方法">
+  <meta name="description" content="bash:cannot create temp file for here-document:No space left on device">
 
 
 
 
-  <meta name="keywords" content="NVIDIA,">
+  <meta name="keywords" content="Linux,">
 
 
 
@@ -32,21 +32,21 @@
 
 
 
-<link rel="canonical" href="http://yoursite.com/2019/05/27/nvidia/">
+<link rel="canonical" href="http://yoursite.com/2019/05/29/tmp/">
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp;Linux环境下：1$  watch -n 0.1 nvidia-smi &amp;emsp;&amp;emsp;Windows环境下：首先将nvidia-smi路径添加到环境变量中：&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;将安装路径 C:\Program Files\NVIDIA Corporation\NVSMI 添加到环境变量中，再执行1-&amp;gt;  nvidia-smi">
-<meta name="keywords" content="NVIDIA">
+<meta name="description" content="&amp;emsp;&amp;emsp;在Linux系统中使用 Tab 自动补全时报错：1bash: cannot create temp file for here-document: No space left on device &amp;emsp;&amp;emsp;原因是系统的 tmp 磁盘空间不足，解决方法是新建 tmp文件夹，比如新建在 /media 下：12mkdir /media/tmp export TMPD">
+<meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="查看NVIDIA GPU 使用情况的方法">
-<meta property="og:url" content="http://yoursite.com/2019/05/27/nvidia/index.html">
+<meta property="og:title" content="bash:cannot create temp file for here-document:No space left on device">
+<meta property="og:url" content="http://yoursite.com/2019/05/29/tmp/index.html">
 <meta property="og:site_name" content="逸清">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;Linux环境下：1$  watch -n 0.1 nvidia-smi &amp;emsp;&amp;emsp;Windows环境下：首先将nvidia-smi路径添加到环境变量中：&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;将安装路径 C:\Program Files\NVIDIA Corporation\NVSMI 添加到环境变量中，再执行1-&amp;gt;  nvidia-smi">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;在Linux系统中使用 Tab 自动补全时报错：1bash: cannot create temp file for here-document: No space left on device &amp;emsp;&amp;emsp;原因是系统的 tmp 磁盘空间不足，解决方法是新建 tmp文件夹，比如新建在 /media 下：12mkdir /media/tmp export TMPD">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-27T14:18:19.902Z">
+<meta property="og:updated_time" content="2019-05-29T13:23:12.133Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="查看NVIDIA GPU 使用情况的方法">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;Linux环境下：1$  watch -n 0.1 nvidia-smi &amp;emsp;&amp;emsp;Windows环境下：首先将nvidia-smi路径添加到环境变量中：&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;将安装路径 C:\Program Files\NVIDIA Corporation\NVSMI 添加到环境变量中，再执行1-&amp;gt;  nvidia-smi">
+<meta name="twitter:title" content="bash:cannot create temp file for here-document:No space left on device">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;在Linux系统中使用 Tab 自动补全时报错：1bash: cannot create temp file for here-document: No space left on device &amp;emsp;&amp;emsp;原因是系统的 tmp 磁盘空间不足，解决方法是新建 tmp文件夹，比如新建在 /media 下：12mkdir /media/tmp export TMPD">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1">
@@ -71,7 +71,7 @@
 
 
 
-    <title> 查看NVIDIA GPU 使用情况的方法 - 逸清 </title>
+    <title> bash:cannot create temp file for here-document:No space left on device - 逸清 </title>
   </head>
 
   <body>
@@ -117,12 +117,12 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          查看NVIDIA GPU 使用情况的方法
+          bash:cannot create temp file for here-document:No space left on device
         
       </h1>
 
       <time class="post-time">
-          May 27 2019
+          May 29 2019
       </time>
     </header>
 
@@ -130,8 +130,8 @@
 
     
             <div class="post-content">
-            <p>&emsp;&emsp;<font color="red">Linux环境下：</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$  watch -n 0.1 nvidia-smi</span><br></pre></td></tr></table></figure></p>
-<p>&emsp;&emsp;<font color="red">Windows环境下：</font>首先将<code>nvidia-smi</code>路径添加到环境变量中：<br>&emsp;&emsp;&emsp;&emsp;将安装路径 <code>C:\Program Files\NVIDIA Corporation\NVSMI</code> 添加到环境变量中，再执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-&gt;  nvidia-smi</span><br></pre></td></tr></table></figure></p>
+            <p>&emsp;&emsp;在Linux系统中使用 <code>Tab</code> 自动补全时报错：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash: cannot create temp file for here-document: No space left on device</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;原因是系统的 <code>tmp</code> 磁盘空间不足，解决方法是新建 <code>tmp</code>文件夹，比如新建在 <code>/media</code> 下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir /media/tmp </span><br><span class="line">export TMPDIR=/media/tmp</span><br></pre></td></tr></table></figure></p>
 
             </div>
           
@@ -141,7 +141,7 @@
 		
 		<div class="post-tags">
 		  
-			<a href="/tags/NVIDIA/">NVIDIA</a>
+			<a href="/tags/Linux/">Linux</a>
 		  
 		</div>
 		
@@ -150,15 +150,9 @@
         
   <nav class="post-nav">
     
-      <a class="prev" href="/2019/05/29/tmp/">
-        <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">bash:cannot create temp file for here-document:No space left on device</span>
-        <span class="prev-text nav-mobile">Prev</span>
-      </a>
     
-    
-      <a class="next" href="/2019/05/27/cuda/">
-        <span class="next-text nav-default">CUDA 和 cuDNN 的历史版本下载链接</span>
+      <a class="next" href="/2019/05/27/nvidia/">
+        <span class="next-text nav-default">查看NVIDIA GPU 使用情况的方法</span>
         <span class="prev-text nav-mobile">Next</span>
         <i class="iconfont icon-right"></i>
       </a>
