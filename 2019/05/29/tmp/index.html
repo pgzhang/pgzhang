@@ -43,7 +43,7 @@
 <meta property="og:site_name" content="逸清">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;在Linux系统中使用 Tab 自动补全时报错：1bash: cannot create temp file for here-document: No space left on device &amp;emsp;&amp;emsp;原因是系统的 tmp 磁盘空间不足，解决方法：&amp;emsp;&amp;emsp;方法1:清理磁盘空间&amp;emsp;&amp;emsp;可使用指令 df -h 来查看磁盘使用情况">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-29T14:23:29.895Z">
+<meta property="og:updated_time" content="2019-05-29T14:27:43.712Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bash:cannot create temp file for here-document:No space left on device">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;在Linux系统中使用 Tab 自动补全时报错：1bash: cannot create temp file for here-document: No space left on device &amp;emsp;&amp;emsp;原因是系统的 tmp 磁盘空间不足，解决方法：&amp;emsp;&amp;emsp;方法1:清理磁盘空间&amp;emsp;&amp;emsp;可使用指令 df -h 来查看磁盘使用情况">
@@ -131,7 +131,7 @@
     
             <div class="post-content">
             <p>&emsp;&emsp;在Linux系统中使用 <code>Tab</code> 自动补全时报错：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash: cannot create temp file for here-document: No space left on device</span><br></pre></td></tr></table></figure></p>
-<p>&emsp;&emsp;原因是系统的 <code>tmp</code> 磁盘空间不足，解决方法：<br>&emsp;&emsp;<font color="red">方法1:</font>清理磁盘空间<br>&emsp;&emsp;可使用指令 <code>df -h</code> 来查看磁盘使用情况<br>&emsp;&emsp;<font color="red">方法2:</font>如果权限不足或者无法清理磁盘，可以新建 <code>tmp</code> 文件夹，比如新建在 <code>/media</code> 下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir /media/tmp </span><br><span class="line">export TMPDIR=/media/tmp</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;原因是系统的 <code>tmp</code> 磁盘空间不足，解决方法：<br>&emsp;&emsp;<font color="red">方法1:</font>清理磁盘空间<br>&emsp;&emsp;可使用指令 <code>df -h</code> 来查看磁盘使用情况<br>&emsp;&emsp;<font color="red">方法2:</font>如果权限不足或者无法清理磁盘，可以新建 <code>tmp</code> 文件夹，比如新建在 <code>/media</code> 下，然后重新指定 <code>tmp</code> 路径：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir /media/tmp </span><br><span class="line">export TMPDIR=/media/tmp</span><br></pre></td></tr></table></figure></p>
 
             </div>
           
